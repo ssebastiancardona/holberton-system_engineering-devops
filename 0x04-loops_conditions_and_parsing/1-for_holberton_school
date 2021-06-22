@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#print holbertonschool 10 times
 for ((i = 0; i <= 9; i++))
 do
  echo "Holberton School"
