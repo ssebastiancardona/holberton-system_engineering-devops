@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# muestra el código IP y HTTP en formato de lista desde el archivo de acceso al registro de apache
+
+awk '{ print $1,$9 }' apache-access.log
