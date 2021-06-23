@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# muestra el número de veces que se encuentra una IP específica y un código HTTP en el archivo de acceso al registro de apache
+
+awk '{ print $1,$9 }' apache-access.log | sort | uniq -c | sort -rn
