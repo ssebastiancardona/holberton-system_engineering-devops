@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# muestra 10 veces holbertonschool pero en la novena iteraccion muestra hi holbertonschool
+
+i=0
+while [ "$i" -lt 10 ]; do
+	echo "Holberton School"
+	if [ "$i" -eq 8 ]
+	then
+	    echo "Hi"
+	fi
+	let i=i+1
+done
