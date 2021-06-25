@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Utiliza código de "1-list_your_processes" para mostrar solo las líneas que contienen "bash"
+# shellcheck disable = SC2009
+
+ps axuf | grep "bash"
