@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Muestra una lista de los procesos actualmente en ejecución que:
+#+ Debe mostrar todos los procesos, para todos los usuarios, incluidos aquellos que pueden no tener un TTY
+#+ Mostrar un formato orientado al usuario
+#+ Mostrar jerarquía de procesos
+
+ps axuf
