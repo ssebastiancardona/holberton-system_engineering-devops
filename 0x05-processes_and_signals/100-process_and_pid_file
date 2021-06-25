@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Crea el archivo /var/run/holbertonscript.pid que contiene su PID
+# Muestra "Hasta el infinito y más allá" de forma indefinida
+# Muestra "Odio el comando de matar" cuando recibe una señal SIGTERM
+# Muestra "¿No me amas?" al recibir una señal SIGINT
+# Elimina el archivo /var/run/holbertonscript.pid y se termina al recibir una señal SIGQUIT o SIGTERM
+
+echo "$$" > /var/run/holbertonscript.pid
+trap "echo 'I hate the kill command'; rm /var/run/holbertonscript.pid; exit" SIGTERM
+trap "rm /var/run/holbertonscript.pid; exit" SIGQUIT
+trap "echo 'Y U no love me?!'" SIGINT
+while true; do
+      echo "To infinity and beyond"
+      sleep 2
+done
