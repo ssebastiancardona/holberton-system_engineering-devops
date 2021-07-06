@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Un script Bash que muestra los puertos de escucha:
+# + Eso solo muestra puertos de escucha
+# + Muestra el PID y el nombre del programa al que pertenece cada socket
+
+sudo netstat -lp
