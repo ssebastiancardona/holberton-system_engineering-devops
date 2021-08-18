@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Ejecuta apache en un contenedor y sube una pagina que dice "Hello Holberton"
 docker-compose up -d
+service apache2 start
 echo "Hello Holberton" > index.html
