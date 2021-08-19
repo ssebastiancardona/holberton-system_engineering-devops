@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-# Write a Bash script that transfers a file from our client to a server:
+#instala nginx y cambia su pagina de inicio por holberton school
+
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo chmod 777 /var/www/html/index.html
+echo 'Holberton School' > /var/www/html/index.html
+sudo service nginx start
