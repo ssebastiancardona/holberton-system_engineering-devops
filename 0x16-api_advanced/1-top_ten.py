@@ -10,8 +10,8 @@ def top_ten(subreddit):
     enumerado para un subreddit determinado.'''
     url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
 
-    HEADERS = {"User-Agent": "lou"}
-    response = requests.get(url, HEADERS=HEADERS, allow_redirects=False)
+    headers = {"User-Agent": "lou"}
+    response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code != 200:
         print('None')
